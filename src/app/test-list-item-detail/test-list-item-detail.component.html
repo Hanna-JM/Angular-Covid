@@ -1,0 +1,18 @@
+<p>Test-list-item-detail works!</p>
+<h2>!</h2>
+<div *ngIf="test">
+  <h1>{{test.name}}</h1>
+
+  <ul>
+    <li class="testdate">{{test.testdate}}</li>
+    <li>
+      <span class="name">{{test.name}}</span>
+      <span class="lastname">{{test.lastname}}</span>
+      <span class="personbirthdate">{{test.personbirthdate}}</span>
+    </li>
+    <li class="testtype">{{test.testtype}}</li>
+    <li class="result">{{test.result}}</li>
+    <li class="qrcode">{{test.qrcode.url}}</li>
+
+  </ul>
+</div>

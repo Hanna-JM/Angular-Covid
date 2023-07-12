@@ -1,0 +1,20 @@
+<h1>Tests!</h1>
+<div *ngFor="let test of tests">
+  {{ test.name }}
+</div>
+<div>
+<yh-test-list-item class="item"
+                   *ngFor="let test of tests"
+                   [testItem] ="test"
+                   [routerLink]="test.number"></yh-test-list-item>
+</div>
+ <!--
+  1-tests is declared in test-list-component
+  2-[test]="test"
+    in this line we bind the let test from test-list-component
+    with test-list-item-component
+  3-<yh-test-list-item belongs to test-list-item-component it is the
+    selector of that component
+  4-routerLink is what appears in the link when we click the list item
+    in addition to the testlink the number of the test
+ -->

@@ -1,0 +1,19 @@
+<!--<h1>---------------</h1>-->
+
+<h2>Test List Item!</h2>
+<ng-container *ngIf="testItem">
+  <div class="content">
+    <div class="header">
+      <span class="number">{{testItem.number}}</span>
+      <span>am&nbsp;</span>
+      <span class="testdate">{{testItem.testdate}}&nbsp;</span>
+      <span class="name">{{testItem.name}}&nbsp;</span>
+      <span class="lastname">{{testItem.lastname}}&nbsp;</span>
+      <br/><br/>
+    </div>
+
+    <img class="ui tiny image"
+         *ngIf="testItem.status &&  testItem.status.url" [src]="testItem.status.url">
+    <div  class="krankenkasse">{{testItem.krankenkasse}}</div>
+  </div>
+</ng-container>
